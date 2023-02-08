@@ -17,7 +17,9 @@
 
 body
 {
-    background-color: #d1c2d3;
+    
+    background-image: url(../img/Miki.JPG);
+    /* background-color: #d1c2d3; */
 
     /* box盒子 水平居中 */
     display: grid;
@@ -31,6 +33,11 @@ body
     bottom:50%;
 
     /* font-size: 3rem; */
+    /* 背景图片水平垂直居中 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background-position: center 0;
     
 
 }
