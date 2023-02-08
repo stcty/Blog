@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 得意黑;
+    src: url('../font/得意黑.woff2');
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+
+    /* 添加得意黑字体 */
+    font-family: 得意黑;
+
+    /* 背景色透明 */
+    background-color: transparent;
+
+}
+
+body
+{
+    background-color: #d1c2d3;
+
+    /* box盒子 水平居中 */
+    display: grid;
+    place-content: center;
+    
+    /* 垂直居中 */
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    right:50%;
+    bottom:50%;
+
+    /* font-size: 3rem; */
+    
+
+}
+
+.box{
+
+    width: 1000px;
+    height: 700px;
+    background-color: rgba(255,255,255, 0.3);
+
+    /* 毛玻璃效果 */    
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    /* 添加圆角 */
+    border-radius: 50px;
+
+    /* 大盒子变成弹性盒子,让小盒子居中 */
+    display: flex;
+    /* 弹性盒子元素在主轴（横轴）方向上居中 */
+    justify-content: center;
+    /* 弹性盒子元素在该行的侧轴（纵轴）方向上居中 */
+    align-items: center;
+
+    /* 字体大小 */
+    font-size: 3rem;
+
+
+}
+
+
+form
+{   
+    width: 600px;
+    /* background-color: #fff; */
+}
+
+label
+{   
+    display: inline-block;
+    /* 文字与输入框的间距 */
+    padding-bottom: 1rem;
+    /* 行高 */
+    line-height: 1.6;
+    /* 字体颜色 */
+    color: #fff;
+}
+
+input
+{
+    font-size: inherit;
+    width: 100%;
+    color: #fff;
+
+    outline: none;
+    display: block;
+
+    font-weight: 400;
+    line-height: 1.6;
+
+    padding: 3px 3px 3px 15px;
+
+    /* 给输入框添加圆角 */
+    border-radius: 20px;
+
+    /* 输入边框样式 像素 实线 颜色*/
+    border: 1px solid #fff;
+}
+
+.login
+{
+    margin-bottom: 50px;
+}
